@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP02.BreakUpHelloSDL", "PP0
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP03.GameClass", "PP03.GameClass\PP03.GameClass.vcxproj", "{57908800-C606-4D21-8C39-A363BDC88BE6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP04.basicDrawing", "PP04.basicDrawing\PP04.basicDrawing.vcxproj", "{74EFAEE5-421C-4A16-9210-16418636A80C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{57908800-C606-4D21-8C39-A363BDC88BE6}.Release|x64.Build.0 = Release|x64
 		{57908800-C606-4D21-8C39-A363BDC88BE6}.Release|x86.ActiveCfg = Release|Win32
 		{57908800-C606-4D21-8C39-A363BDC88BE6}.Release|x86.Build.0 = Release|Win32
+		{74EFAEE5-421C-4A16-9210-16418636A80C}.Debug|x64.ActiveCfg = Debug|x64
+		{74EFAEE5-421C-4A16-9210-16418636A80C}.Debug|x64.Build.0 = Debug|x64
+		{74EFAEE5-421C-4A16-9210-16418636A80C}.Debug|x86.ActiveCfg = Debug|Win32
+		{74EFAEE5-421C-4A16-9210-16418636A80C}.Debug|x86.Build.0 = Debug|Win32
+		{74EFAEE5-421C-4A16-9210-16418636A80C}.Release|x64.ActiveCfg = Release|x64
+		{74EFAEE5-421C-4A16-9210-16418636A80C}.Release|x64.Build.0 = Release|x64
+		{74EFAEE5-421C-4A16-9210-16418636A80C}.Release|x86.ActiveCfg = Release|Win32
+		{74EFAEE5-421C-4A16-9210-16418636A80C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
