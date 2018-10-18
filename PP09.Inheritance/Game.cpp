@@ -1,10 +1,11 @@
 #include "Game.h"
 #include <SDL_image.h>
-
-	#include <iostream>
+#include <iostream>
+#include"TextureManager.h"
 using namespace std;
 
-bool Game::init(const char* title, int xpos, int ypos, int width, int height, bool fullscreen)
+bool Game::init(const char* title, int xpos, int ypos,
+	int width, int height, bool fullscreen)
 {
 	if (SDL_Init(SDL_INIT_EVERYTHING) >= 0)
 	{
@@ -21,9 +22,8 @@ bool Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 		{
 			return false;
 		}
-
-		//m_textureManager.load("assets/animate-alpha.png", "animate", m_pRenderer);
-		SDL_SetRenderDrawColor(m_pRenderer, 255, 0, 0, 255);
+		m_go.load(100, 100, 128, 82, "animate");
+		m_player.load(300, 300, 128, 82, "animate");
 	}
 	else {
 		return false; // sdl could not initialize

@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP07.TextureManager", "PP07
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP08.SingletonTM", "PP08.SingletonTM\PP08.SingletonTM.vcxproj", "{9233EF3C-CF39-4AE4-B212-C106F2236C55}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP09.Inheritance", "PP09.Inheritance\PP09.Inheritance.vcxproj", "{068D4BE3-2BEA-49CC-9D48-0595B5E08904}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{9233EF3C-CF39-4AE4-B212-C106F2236C55}.Release|x64.Build.0 = Release|x64
 		{9233EF3C-CF39-4AE4-B212-C106F2236C55}.Release|x86.ActiveCfg = Release|Win32
 		{9233EF3C-CF39-4AE4-B212-C106F2236C55}.Release|x86.Build.0 = Release|Win32
+		{068D4BE3-2BEA-49CC-9D48-0595B5E08904}.Debug|x64.ActiveCfg = Debug|x64
+		{068D4BE3-2BEA-49CC-9D48-0595B5E08904}.Debug|x64.Build.0 = Debug|x64
+		{068D4BE3-2BEA-49CC-9D48-0595B5E08904}.Debug|x86.ActiveCfg = Debug|Win32
+		{068D4BE3-2BEA-49CC-9D48-0595B5E08904}.Debug|x86.Build.0 = Debug|Win32
+		{068D4BE3-2BEA-49CC-9D48-0595B5E08904}.Release|x64.ActiveCfg = Release|x64
+		{068D4BE3-2BEA-49CC-9D48-0595B5E08904}.Release|x64.Build.0 = Release|x64
+		{068D4BE3-2BEA-49CC-9D48-0595B5E08904}.Release|x86.ActiveCfg = Release|Win32
+		{068D4BE3-2BEA-49CC-9D48-0595B5E08904}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
