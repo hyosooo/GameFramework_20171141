@@ -3,6 +3,7 @@
 #include <iostream>
 #include"TextureManager.h"
 #include "Enemy.h"
+#include "Monster.h"
 #include "GameObject.h"
 using namespace std;
 
@@ -24,19 +25,35 @@ bool Game::init(const char* title, int xpos, int ypos,
 		{
 			return false;
 		}
+
+		if (!TheTextureManager::Instance()->load("assets/monster.png", "monster", m_pRenderer))
+		{
+			return false;
+		}
+
 		m_go = new GameObject();
 		m_player = new Player();
 		m_enemy = new Enemy();
+		m_monster = new Monster();
+		m_monster2 = new Monster();
+
 
 		m_go->load(100, 100, 128, 82, "animate");
 		m_player->load(300, 300, 128, 82, "animate");
 		m_enemy->load(0, 0, 128, 82, "animate");
+		m_monster->load(30, 100, 97, 70, "monster");
+		m_monster2->load(30, 250, 97, 70, "monster");
 
 		m_gameObjects.push_back(m_go);
 		m_gameObjects.push_back(m_player);
 		m_gameObjects.push_back(m_enemy);
-
+		m_gameObjects.push_back(m_monster);
+		m_gameObjects.push_back(m_monster2);
+		
+		m_monster->SetSpeed(1);
+		m_monster2->SetSpeed(3);
 	}
+
 	else {
 		return false; // sdl could not initialize
 	}
@@ -60,6 +77,10 @@ void Game::update()
 	{
 		m_gameObjects[i]->update();
 	}
+
+	
+
+
 }
 
 void Game::clean()
