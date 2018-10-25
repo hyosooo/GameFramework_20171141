@@ -5,7 +5,7 @@ using namespace std;
 
 void Monster::update()
 {
-	if (m_x > 400)
+	if (m_x > 401)
 	{
 		speed2 = -speed;
 	}
