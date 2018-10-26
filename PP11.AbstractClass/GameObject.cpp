@@ -4,11 +4,9 @@
 #include <iostream>
 using namespace std;
 
-
-
 void GameObject::draw()
 {
-	TheTextureManager::Instance()->drawFrame;
+	
 }
 
 void GameObject::update()
@@ -19,3 +17,4 @@ void GameObject::update()
 void GameObject::clean()
 {
 }
+

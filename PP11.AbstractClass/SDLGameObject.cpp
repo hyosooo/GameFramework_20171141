@@ -23,6 +23,7 @@ void SDLGameObject::draw()
 
 void SDLGameObject::update()
 {
+	m_x += 1;
 }
 
 void SDLGameObject::clean()

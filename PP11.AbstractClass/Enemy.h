@@ -1,5 +1,5 @@
+#pragma once
 #include"SDLGameObject.h"
-#include"LoadParams.h"
 
 class Enemy : public SDLGameObject
 {
@@ -8,4 +8,4 @@ public:
 	virtual void draw();
 	virtual void update();
 	virtual void clean();
-};
+};

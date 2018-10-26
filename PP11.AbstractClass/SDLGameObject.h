@@ -1,3 +1,6 @@
+#pragma once
+#include "SDL.h"
+#include <map>
 #include "GameObject.h"
 
 class SDLGameObject : public GameObject
@@ -16,3 +19,4 @@ protected:
 	int m_currentFrame;
 	std::string m_textureID;
 };
+
