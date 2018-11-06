@@ -6,6 +6,7 @@
 #include <map>
 
 
+
 class Game {
 private:
 
@@ -20,6 +21,8 @@ private:
 	int m_currentFrame;
 
 	std::vector<GameObject*> m_gameObjects;
+
+
 
 public:
 
@@ -42,8 +45,8 @@ public:
 	void handleEvents();
 	bool running() { return m_bRunning; }
 	void clean();
-	void quit();
 
+	void quit();
 
 
 
