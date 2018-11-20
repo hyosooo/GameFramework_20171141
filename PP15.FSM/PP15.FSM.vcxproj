@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{AA2C64F0-B881-4FBF-8FF4-48F1781F0602}</ProjectGuid>
-    <RootNamespace>PP14MInputHandler</RootNamespace>
+    <ProjectGuid>{A0E05B5E-CDA7-4739-8BDD-5149ABBB21C2}</ProjectGuid>
+    <RootNamespace>PP15FSM</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -71,7 +71,6 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>..\..\SDL2-2.0.8\include;$(IncludePath)</IncludePath>
-    <LibraryPath>..\..\SDL2-2.0.8\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -122,25 +121,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Enemy.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="GameObject.cpp" />
-    <ClCompile Include="InputHandler.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="SDLGameObject.cpp" />
-    <ClCompile Include="TextureManager.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Enemy.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameState.h" />
+    <ClInclude Include="GameStateMachine.h" />
     <ClInclude Include="Inputhandler.h" />
     <ClInclude Include="LoaderParams.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="SDLGameObject.h" />
-    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="MenuState.h" />
+    <ClInclude Include="PlayState.h" />
     <ClInclude Include="Vector2D.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameStateMachine.cpp" />
+    <ClCompile Include="InputHandler.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MenuState.cpp" />
+    <ClCompile Include="PlayState.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
